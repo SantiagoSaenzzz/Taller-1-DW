@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Sobre Nosotros</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="robots" content="index, follow" />
+  <title>Sobre Nosotros — A&S</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="interests.html">Intereses</a></li>
-        <li><a href="aboutus.html">Sobre Nosotros</a></li>
-        <li><a href="cronology.html">Cronología</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <nav class="navbar" aria-label="Principal">
+    <a class="brand" href="index.html">A&S</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+    <ul id="nav-list" class="nav-list" data-nav>
+      <li><a href="index.html" data-route>Inicio</a></li>
+      <li><a href="aboutus.html" data-route>Sobre Nosotros</a></li>
+      <li><a href="cronology.html" data-route>Cronología</a></li>
+      <li><a href="interests.html" data-route>Intereses</a></li>
+      <li><a href="videos.html" data-route>Videos</a></li>
+      <li><a href="links.html" data-route>Links</a></li>
+      <li><a href="images.html" data-route>Imágenes</a></li>
+      <li><a href="contact.html" data-route>Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-<main>
-  <h1>Sobre Nosotros</h1>
-    <p>Somos dos compañeros de clase colaborando en este blog como parte del primer taller del curso.</p>
+<main class="container" data-section>
+  <h1 class="underlined">Sobre Nosotros</h1>
+  <p>HTML + CSS + JS por nosotros; mantenemos el diseño simple y consistente.</p>
 
-    <h2>Datos Biográficos</h2>
-    <table border="1" cellspacing="0" cellpadding="8">
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Carrera</th>
-          <th>Intereses</th>
-          <th>Algo curioso</th>
-          <th>Disgustos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Amelie Guerrrero</td>
-          <td>Ingeniería de Sistemas</td>
-          <td>Videojuegos, ver peliculas</td>
-          <td>Me gusta programar de noche</td>
-          <td>Me gusta programar de noche</td>
-        </tr>
-        <tr>
-          <td>Santiago Saenz</td>
-          <td>Ingeniería de Sistemas</td>
-          <td>Videojuegos, hardware, baloncesto, gimnasio, armar cosas</td>
-          <td>Tengo una obsesion por el orden, la limpieza y la simetria</td>
-          <td>Me gusta programar de noche</td>
-        </tr>
-      </tbody>
-    </table>
-  </main>
+  <h2>Datos biográficos y generales</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Carrera</th>
+        <th>Intereses</th>
+        <th>Algo curioso</th>
+        <th>Disgustos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amelie Guerrero</td>
+        <td>21 años</td>
+        <td>Ingeniería de Sistemas</td>
+        <td>Películas, videojuegos</td>
+        <td>Prefiere programar de noche</td>
+        <td>Desorden visual</td>
+      </tr>
+      <tr>
+        <td>Santiago Saenz</td>
+        <td>21 años</td>
+        <td>Ingeniería de Sistemas</td>
+        <td>Hardware, baloncesto, gym, videojuegos</td>
+        <td>Armar Legos de todo tipo</td>
+        <td>Interfaces mal estructuradas, desorden de habitación</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
 
-  </main>
-
-  <footer>
-    <p>Hecho por Amelie Guerrero y Santiago Saenz - 2025</p>
-  </footer>
+<footer class="site-footer">
+  <small>Hecho por Amelie Guerrero y Santiago Saenz — 2025</small>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
