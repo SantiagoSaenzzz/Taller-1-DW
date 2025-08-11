@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Evitar cache para cliente -->
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+
+  <!-- Robots desde JS -->
+  <meta name="robots" content="index, follow" />
+
+  <title>Inicio — Amelie & Santiago</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Principal">
+      <a class="brand" href="index.html">A&S</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+      <ul id="nav-list" class="nav-list" data-nav>
+        <li><a href="index.html" data-route>Inicio</a></li>
+        <li><a href="aboutus.html" data-route>Sobre Nosotros</a></li>
+        <li><a href="cronology.html" data-route>Cronología</a></li>
+        <li><a href="interests.html" data-route>Intereses</a></li>
+        <li><a href="videos.html" data-route>Videos</a></li>
+        <li><a href="links.html" data-route>Links</a></li>
+        <li><a href="images.html" data-route>Imágenes</a></li>
+        <li><a href="contact.html" data-route>Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="underlined">Bienvenidos</h1>
+
+    <section class="welcome" data-section>
+      <img src="bienvenida.jpg" alt="Foto de bienvenida" class="float-img-left" width="240" height="auto" />
+      <p>
+        Este es nuestro sitio del taller 1 de Desarrollo Web. Aquí practicamos HTML, CSS y Javascript
+        básicos: estructura semántica, navegación multipágina, listas, tablas, multimedia, formularios
+        e interacciones con el DOM. Usamos una fuente de Google Fonts, un menú superior fijo,
+        y enlaces con estados de hover y activo. Evitamos caché para el cliente y permitimos
+        indexación por robots.
+      </p>
+      <p>
+        El JavaScript se encarga de marcar en el menú a la página actual, aplicar scroll suave al ir a
+        las demas paginas, y resaltar secciones cuando el mouse está encima.
+        También añadimos validaciones de formularios en la página de contacto sin usar popups, mostrando
+        mensajes de error al lado de cada campo si llega a ser el caso.
+      </p>
+      <p>
+        A nivel de tablas, aplicamos el esquema de filas alternadas y encabezado con fondo sólido; en
+        cronología, las secciones tendrán borde y fondo en gradiente, además de viñetas y numeración
+        con color distinto al texto.
+      </p>
+      <p>
+        El menú es responsive: en pantallas pequeñas se colapsa con un botón. No usamos frameworks para
+        mantenernos en lo que pide la materia en esta etapa: HTML, CSS y JS puro. El código está
+        organizado y comentado lo justo para que sea fácil de seguir.
+      </p>
+      <p>
+        La estructura de todas las páginas será consistente: mismo encabezado y pie de página, y un
+        contenedor central con los contenidos específicos de cada sección (sobre nosotros, cronología,
+        intereses, videos, links, imágenes y contacto).
+      </p>
+    </section>
+
+    <div class="clearfix"></div>
+  </main>
+
+  <footer class="site-footer">
+    <small>Hecho por Amelie Guerrero y Santiago Saenz — 2025</small>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
