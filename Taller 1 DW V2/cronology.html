@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta name="robots" content="index, follow" />
+  <title>Cronología — A&S</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar" aria-label="Principal">
+    <a class="brand" href="index.html">A&S</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+    <ul id="nav-list" class="nav-list" data-nav>
+      <li><a href="index.html" data-route>Inicio</a></li>
+      <li><a href="aboutus.html" data-route>Sobre Nosotros</a></li>
+      <li><a href="cronology.html" data-route>Cronología</a></li>
+      <li><a href="interests.html" data-route>Intereses</a></li>
+      <li><a href="videos.html" data-route>Videos</a></li>
+      <li><a href="links.html" data-route>Links</a></li>
+      <li><a href="images.html" data-route>Imágenes</a></li>
+      <li><a href="contact.html" data-route>Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="underlined">Cronología de aprendizaje</h1>
+
+  <h2>Índice</h2>
+  <ul>
+    <li><a href="#semana1" data-scroll>Semana 1: HTML</a></li>
+    <li><a href="#semana2" data-scroll>Semana 2: CSS</a></li>
+    <li><a href="#semana3" data-scroll>Semana 3: JavaScript</a></li>
+  </ul>
+
+  <section id="semana1" class="timeline timeline-section" data-section>
+    <h2>Semana 1: HTML</h2>
+    <ul>
+      <li>Estructura (`head`, `body`, `meta`)</li>
+      <li>Listas, tablas, enlaces y multimedia</li>
+      <li>Fragmentos con <code>id</code> y navegación interna</li>
+    </ul>
+  </section>
+
+  <section id="semana2" class="timeline timeline-section" data-section>
+    <h2>Semana 2: CSS</h2>
+    <ol>
+      <li>POSH (HTML semántico) + separación de responsabilidades</li>
+      <li>Selectores, box model, posicionamiento</li>
+      <li><em>float</em> para rodear imágenes con texto</li>
+    </ol>
+  </section>
+
+  <section id="semana3" class="timeline timeline-section" data-section>
+    <h2>Semana 3: JavaScript</h2>
+    <ul>
+      <li>Tipos de datos, control de flujo, funciones</li>
+      <li>DOM (<code>querySelector</code>, <code>addEventListener</code>, <code>innerHTML</code>)</li>
+      <li>Validación en cliente y eventos</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>Hecho por Amelie Guerrero y Santiago Saenz — 2025</small>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
